@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# Output of 'npm pack'
+*.tgz
+
+# Stores VSCode settings
+.vscode/
