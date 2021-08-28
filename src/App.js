@@ -1,8 +1,9 @@
 import React from "react";
-
+import Home from "./screens/home"
+import "App.css"
 const App = () => ( 
     <div>
-        <h1>Hello React</h1>
+        <Home/>
     </div>
 );
 
