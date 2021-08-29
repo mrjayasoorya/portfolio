@@ -1,4 +1,4 @@
-import { Grid, Typography, withStyles } from "@material-ui/core";
+import { Grid, Hidden, Typography, withStyles } from "@material-ui/core";
 import React, { Component } from "react";
 import withHeader from "../../hoc/header";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
@@ -31,19 +31,65 @@ const style = (theme) => ({
     letterSpacing: 20,
     fontWeight: "bold",
     fontSize: "4rem",
+    [theme.breakpoints.down("sm")]: {
+      letterSpacing: 10,
+      fontWeight: "bold",
+      fontSize: "2rem",
+    },
+    [theme.breakpoints.only("md")]: {
+      letterSpacing: 10,
+      fontWeight: "bold",
+      fontSize: "2rem",
+    },
   },
   contentTitleTwo: {
     letterSpacing: 10,
     margin: "0px 4px",
     fontSize: "2rem",
+    [theme.breakpoints.down("sm")]: {
+      letterSpacing: 1,
+      // fontWeight: "bold",
+      fontSize: "1rem",
+      margin: "16px 0px",
+    },
+    [theme.breakpoints.only("md")]: {
+      letterSpacing: 1,
+      // fontWeight: "bold",
+      fontSize: "1rem",
+      margin: "16px 0px",
+    },
   },
   contentTitleThree: {
     letterSpacing: 10,
     margin: "0px 4px",
+    [theme.breakpoints.down("sm")]: {
+      letterSpacing: 1,
+      // fontWeight: "bold",
+      fontSize: "1rem",
+      margin: "16px 0px"
+    },
+    [theme.breakpoints.only("md")]: {
+      letterSpacing: 1,
+      // fontWeight: "bold",
+      fontSize: "1rem",
+      margin: "16px 0px"
+    },
   },
   contentTitleFour: {
     letterSpacing: 10,
     margin: "0px 4px",
+    [theme.breakpoints.down("sm")]: {
+      letterSpacing: 1,
+      // fontWeight: "bold",
+      fontSize: "1rem",
+      margin: "16px 0px"
+    },
+    [theme.breakpoints.only("md")]: {
+      letterSpacing: 1,
+      // fontWeight: "bold",
+      fontSize: "1rem",
+      margin: "16px 0px"
+    },
   },
   sectionTwo: {
     margin: "auto",
@@ -55,58 +101,58 @@ const style = (theme) => ({
   "@-webkit-keyframes bounce-top": {
     "0%": {
       "-webkit-transform": "translateY(-45px)",
-              "transform": "translateY(-45px)",
+      transform: "translateY(-45px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
-      opacity: 1
+      "animation-timing-function": "ease-in",
+      opacity: 1,
     },
     "24%": {
       opacity: 1,
     },
     "40%": {
       "-webkit-transform": "translateY(-24px)",
-              "transform": "translateY(-24px)",
+      transform: "translateY(-24px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
     },
     "65%": {
       "-webkit-transform": "translateY(-12px)",
-              "transform": "translateY(-12px)",
+      transform: "translateY(-12px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
     },
     "82%": {
       "-webkit-transform": "translateY(-6px)",
-              "transform": "translateY(-6px)",
+      transform: "translateY(-6px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
     },
     "93%": {
       "-webkit-transform": "translateY(-4px)",
-              "transform": "translateY(-4px)",
+      transform: "translateY(-4px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
     },
     "25%, 55%, 75%, 87%": {
       "-webkit-transform": "translateY(0px)",
-              "transform": "translateY(0px)",
+      transform: "translateY(0px)",
       "-webkit-animation-timing-function": "ease-out",
-              "animation-timing-function": "ease-out",
+      "animation-timing-function": "ease-out",
     },
     "100%": {
       "-webkit-transform": "translateY(0px)",
-              "transform": "translateY(0px)",
+      transform: "translateY(0px)",
       "-webkit-animation-timing-function": "ease-out",
-              "animation-timing-function": "ease-out",
+      "animation-timing-function": "ease-out",
       opacity: 1,
-    }
+    },
   },
-  "@keyframes bounce-top" :{
+  "@keyframes bounce-top": {
     "0%": {
       "-webkit-transform": "translateY(-45px)",
-              "transform": "translateY(-45px)",
+      transform: "translateY(-45px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
       opacity: 1,
     },
     "24%": {
@@ -114,42 +160,70 @@ const style = (theme) => ({
     },
     "40%": {
       "-webkit-transform": "translateY(-24px)",
-              "transform": "translateY(-24px)",
+      transform: "translateY(-24px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
     },
     "65%": {
       "-webkit-transform": "translateY(-12px)",
-              "transform": "translateY(-12px)",
+      transform: "translateY(-12px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
     },
     "82%": {
       "-webkit-transform": "translateY(-6px)",
-              "transform": "translateY(-6px)",
+      transform: "translateY(-6px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
     },
     "93%": {
       "-webkit-transform": "translateY(-4px)",
-              "transform": "translateY(-4px)",
+      transform: "translateY(-4px)",
       "-webkit-animation-timing-function": "ease-in",
-              "animation-timing-function": "ease-in",
+      "animation-timing-function": "ease-in",
     },
     "25%, 55%, 75%, 87%": {
       "-webkit-transform": "translateY(0px)",
-              "transform": "translateY(0px)",
+      transform: "translateY(0px)",
       "-webkit-animation-timing-function": "ease-out",
-              "animation-timing-function": "ease-out",
+      "animation-timing-function": "ease-out",
     },
     "100%": {
       "-webkit-transform": "translateY(0px)",
-              "transform": "translateY(0px)",
+      transform: "translateY(0px)",
       "-webkit-animation-timing-function": "ease-out",
-              "animation-timing-function": "ease-out",
+      "animation-timing-function": "ease-out",
       opacity: 1,
-    }
-  }
+    },
+  },
+  mainContent: {
+    height: "90vh",
+    display: "flex",
+    margin: "auto",
+    alignContent: "center",
+    [theme.breakpoints.down("sm")]: {
+      height: "90vh",
+      // display: "block",
+      margin: "auto",
+      alignContent: "space-evenly",
+      padding: 15,
+    },
+    [theme.breakpoints.only("md")]: {
+      // height: "90vh",
+      // display: "block",
+      margin: "auto",
+      alignContent: "space-evenly",
+      padding: 15,
+    },
+  },
+  svgIcon: {
+    width: "450",
+    height: "450",
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      height: "100px",
+    },
+  },
 });
 class Title extends Component {
   constructor(props) {
@@ -158,18 +232,20 @@ class Title extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <>
-        <Grid container>
+      // <Grid container direction="row" className={classes.mainContent}>
+      <Grid container className={classes.mainContent}>
+        <Hidden mdDown>
           <Grid
             container
             item
-            xs={5}
+            xs={12}
+            sm={5}
             justifyContent="center"
             className={classes.fadein}
+            // style={{margin:"auto"}}
           >
             <svg
-              width="450"
-              height="450"
+              className={classes.svgIcon}
               viewBox="0 0 63 54"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -193,47 +269,68 @@ class Title extends Component {
               </defs>
             </svg>
           </Grid>
-          <Grid item xs={7} className={classes.sectionTwo}>
-            <Grid item xs={12}>
-              <Typography variant="h3" className={classes.contentTitleOne}>
-                Either you run the day or the day runs you.
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="h3" className={classes.contentTitleTwo}>
-                FULL STACK DEVELOPER
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography
-                variant="subtitle1"
-                className={classes.contentTitleFour}
-              >
-                I'm M R JAYASOORYA
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography
-                variant="caption"
-                className={classes.contentTitleThree}
-              >
-                since 2019
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-
-        <Grid container>
-          <Grid item xs={12} justifyContent="center">
-            <Typography variant="subtitle1" align="center">
-              Scroll Down
+        </Hidden>
+        <Grid item xs={12} sm={7} className={classes.sectionTwo}>
+          <Grid item xs={12}>
+            <Typography variant="h3" className={classes.contentTitleOne}>
+              Either you run the day or the day runs you.
             </Typography>
           </Grid>
-          <Grid container item xs={12} justifyContent="center" >
-            <ArrowDownwardIcon color="secondary" className={classes.bounceTop}/>
+          <Grid item xs={12}>
+            <Typography variant="h3" className={classes.contentTitleTwo}>
+              FULL STACK DEVELOPER
+            </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography
+              variant="subtitle1"
+              className={classes.contentTitleFour}
+            >
+              I'm M R JAYASOORYA
+            </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="caption" className={classes.contentTitleThree}>
+              2 Years and 4 monts of experience
+            </Typography>
           </Grid>
         </Grid>
-      </>
+        <Grid
+          item
+          xs={12}
+          justifyContent="center"
+          style={{ height: "fit-content" }}
+        >
+          <Typography variant="subtitle1" align="center">
+            Scroll Down
+          </Typography>
+        </Grid>
+        <Grid
+          container
+          item
+          xs={12}
+          justifyContent="center"
+          style={{ height: "fit-content" }}
+        >
+          <ArrowDownwardIcon
+            color="secondary"
+            className={classes.bounceTop}
+            style={{ height: "fit-content" }}
+          />
+        </Grid>
+      </Grid>
+
+      // {/* <Grid container item>
+      //   <Grid item xs={12} justifyContent="center">
+      //     <Typography variant="subtitle1" align="center">
+      //       Scroll Down
+      //     </Typography>
+      //   </Grid>
+      //   <Grid container item xs={12} justifyContent="center" >
+      //     <ArrowDownwardIcon color="secondary" className={classes.bounceTop}/>
+      //   </Grid>
+      // </Grid> */}
+      // </Grid >
     );
   }
 }

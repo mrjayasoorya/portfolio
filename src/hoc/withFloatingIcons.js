@@ -1,6 +1,6 @@
 import React from 'react';
 import FloatingContactInfo from '../components/floatingIcons';
-import {makeStyles} from "@material-ui/core"
+import {Hidden, makeStyles} from "@material-ui/core"
 const useStyles = makeStyles((theme) => ({
     floatingIconRoot:{
         position:"absolute",
@@ -13,9 +13,11 @@ const FloatingIcons = Component => props => {
     const classes = useStyles();
     return (
         <div>
-            <div className={classes.floatingIconRoot}>
+           <Hidden smDown>
+           <div className={classes.floatingIconRoot}>
             <FloatingContactInfo/>
             </div>
+           </Hidden>
             <Component/>
         </div>
     );
