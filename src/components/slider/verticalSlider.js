@@ -52,7 +52,7 @@ componentWillMount(){
       vertical: true,
       verticalSwiping: true,
       customPaging: function (i) {
-        return <div ></div>;
+        return <div style={{opacity:0}}>{i}</div>;
       },
       // dotsClass: "slick-dots slick-thumb",
       beforeChange: function(currentSlide, nextSlide) {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import withHeader from '../../hoc/header';
 
 class Aboutus extends Component {
     render() {
@@ -10,4 +11,4 @@ class Aboutus extends Component {
     }
 }
 
-export default Aboutus;
+export default withHeader(Aboutus);

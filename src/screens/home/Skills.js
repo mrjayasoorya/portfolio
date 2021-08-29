@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import withHeader from '../../hoc/header';
 
 class Skills extends Component {
     render() {
@@ -10,4 +11,4 @@ class Skills extends Component {
     }
 }
 
-export default Skills;
+export default withHeader(Skills);

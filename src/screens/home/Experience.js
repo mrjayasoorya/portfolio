@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import withHeader from '../../hoc/header';
 
 class Experience extends Component {
     render() {
@@ -10,4 +11,4 @@ class Experience extends Component {
     }
 }
 
-export default Experience;
+export default withHeader(Experience);

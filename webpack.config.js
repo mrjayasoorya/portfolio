@@ -6,21 +6,22 @@ module.exports = {
   output: {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
   ],
-  resolve: {
-    modules: [__dirname, "src", "node_modules"],
-    extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
-  },
+  // resolve: {
+  //   modules: [__dirname, "src", "node_modules"],
+  //   extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
+  // },
   mode:"development",
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: require.resolve("babel-loader"),
       },
@@ -33,5 +34,11 @@ module.exports = {
         use: ["file-loader"],
       }, 
     ],
+  },
+  devServer: {
+    // contentBase: path.join(__dirname, 'dist'),
+    historyApiFallback: true,
+    compress: true,
+    port:3000
   },
 };
