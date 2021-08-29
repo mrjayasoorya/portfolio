@@ -30,7 +30,7 @@ function Header(props) {
     <div className={classes.root}>
       <Grid container item xs={12}>
         <Grid item xs={9} sm={6} className={classes.menuTitleName}>
-          M R JAYASOORYA 🧑
+          M. R. JAYASOORYA 🧑
         </Grid>
         <Grid container item xs={3} sm={6} justifyContent="flex-end">
           <Link className={classes.menuItemLink} to={routes.home}>

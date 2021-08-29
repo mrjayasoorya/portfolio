@@ -13,8 +13,9 @@ const styles = (theme) => ({
     minWidth: 600,
     zIndex: 3,
     background: "white",
-    // WebkitAnimation: `$slide-in-fwd-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
-    // animation: `$slide-in-fwd-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
+    [theme.breakpoints.down('sm')]:{
+      minWidth: 290,
+  }
   },
   closeBtn: {
     margin: "16px 24px",

@@ -286,7 +286,7 @@ class Title extends Component {
               variant="subtitle1"
               className={classes.contentTitleFour}
             >
-              I'm M R JAYASOORYA
+              I'm M. R. JAYASOORYA
             </Typography>
           </Grid>
           <Grid item xs={12}>
