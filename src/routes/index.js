@@ -8,7 +8,7 @@ import { routes } from "./routes";
 const Routers = (props) => {
   
   return (
-    <Router>
+    <Router basename={window.location.pathname || ''}>
       <Switch>
         <Route exact path={"/"} component={Home} {...props}/>
         <Route exact path={routes.blog} component={Blog} {...props}/>
