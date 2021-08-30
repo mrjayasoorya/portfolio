@@ -4,11 +4,12 @@ const path = require("path");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.[hash].js",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "build"),
-    publicPath: '/'
+    // publicPath: '/'
   },
   plugins: [
+    
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
@@ -23,16 +24,20 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: require.resolve("babel-loader"),
+        loader: "babel-loader",
       },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.png|svg|jpg|gif$/,
+        test: /\.png|jpg|gif$/,
         use: ["file-loader"],
       }, 
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+    }
     ],
   },
   devServer: {
