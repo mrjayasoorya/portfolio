@@ -9,9 +9,9 @@ let data = [
   {
     title: "JS FRAMEWORKS",
     languages: [
-      { image: origin.concat("/images/reactjs.png"), label: "REACT JS" },
+      { image: "/images/reactjs.png", label: "REACT JS" },
       {
-        image: origin.concat("/images/node.svg"),
+        image: "/images/node.svg",
         label: "NODE JS",
       },
     ],
@@ -19,23 +19,23 @@ let data = [
   {
     title: "COMPONENT FRAMEWORKS",
     languages: [
-      { image: origin.concat("/images/materialui.png"), label: "MATERIAL UI" },
-      { image: origin.concat("/images/reactjs.png"), label: "REACTSTRAP" },
+      { image: "/images/materialui.png", label: "MATERIAL UI" },
+      { image: "/images/reactjs.png", label: "REACTSTRAP" },
     ],
   },
   {
     title: "BUNDLERS",
     languages: [
-      { image: origin.concat("/images/webpack.webp"), label: "WEBPACK" },
+      { image: "/images/webpack.webp", label: "WEBPACK" },
     ],
   },
   {
     title: "CLOUDS",
     note: "Beginner know only the basics",
     languages: [
-      { image: origin.concat("/images/aws.webp"), label: "AWS" },
+      { image: "/images/aws.webp", label: "AWS" },
       {
-        image: origin.concat("/images/digitalocean.png"),
+        image: "/images/digitalocean.png",
         label: "DIGITAL OCEAN",
       },
     ],
@@ -44,8 +44,8 @@ let data = [
     title: "WEB SERVERS",
     note: "Beginner know only the basics",
     languages: [
-      { image: origin.concat("/images/nginx.png"), label: "NGNIX" },
-      { image: origin.concat("/images/apache.png"), label: "APACHE" },
+      { image: "/images/nginx.png", label: "NGNIX" },
+      { image: "/images/apache.png", label: "APACHE" },
     ],
   },
 ];

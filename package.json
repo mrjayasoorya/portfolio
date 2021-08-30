@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://mrjayasoorya.github.io/portfolio/",
+  "homepage": "https://mrjayasoorya.github.io/",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --config webpack.config.js --mode production",
