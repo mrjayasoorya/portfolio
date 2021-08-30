@@ -142,18 +142,18 @@ class AppDialog extends React.Component {
   };
 
   set = (props) => {
-    debugger
+    
     // const { classes } = this.props;
     // console.log(document?.querySelector("[role='dialog']"))
-    // debugger
+    // 
     // if(document?.querySelector("[role='dialog']")){
     //   let ele = document.querySelector("[role='dialog']")
     //   ele.classList.remove("AppDialog-slide_in_fwd_br-3")
     //   console.log(ele.className)
-    //   debugger
+    //   
     //   ele.classList.add(classes.slide_out_bck_right)
     //   console.log(ele.className)
-    //   debugger
+    //   
     // }
     this.setState({ ...props });
   };

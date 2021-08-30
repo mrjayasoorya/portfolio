@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import VerticalSwipeToSlide from '../../components/slider/verticalSlider';
 import withContact from '../../hoc/withContact';
 import FloatingIcons from '../../hoc/withFloatingIcons';
@@ -21,4 +22,4 @@ Home.propTypes = {
 
 };
 
-export default FloatingIcons(withContact(Home));
+export default withRouter(FloatingIcons(withContact(Home)));

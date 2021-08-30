@@ -49,7 +49,7 @@ const style = (theme) => ({
     [theme.breakpoints.down("sm")]: {
       letterSpacing: 1,
       // fontWeight: "bold",
-      fontSize: "1rem",
+      fontSize: "1.2rem",
       margin: "16px 0px",
     },
     [theme.breakpoints.only("md")]: {
@@ -65,7 +65,7 @@ const style = (theme) => ({
     [theme.breakpoints.down("sm")]: {
       letterSpacing: 1,
       // fontWeight: "bold",
-      fontSize: "1rem",
+      fontSize: "0.8rem",
       margin: "16px 0px"
     },
     [theme.breakpoints.only("md")]: {
@@ -278,7 +278,7 @@ class Title extends Component {
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h3" className={classes.contentTitleTwo}>
-              FULL STACK DEVELOPER
+            I'm M. R. JAYASOORYA 🧑
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -286,12 +286,12 @@ class Title extends Component {
               variant="subtitle1"
               className={classes.contentTitleFour}
             >
-              I'm M. R. JAYASOORYA
+              Fullstack Developer
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="caption" className={classes.contentTitleThree}>
-              2 Years and 4 monts of experience
+              2+ years of experience
             </Typography>
           </Grid>
         </Grid>

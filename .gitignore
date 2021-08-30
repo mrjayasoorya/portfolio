@@ -6,3 +6,6 @@ node_modules/
 
 # Stores VSCode settings
 .vscode/
+
+build/
+dist/

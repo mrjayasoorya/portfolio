@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "bundle.[hash].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     publicPath: '/'
   },
   plugins: [
@@ -36,7 +36,7 @@ module.exports = {
     ],
   },
   devServer: {
-    // contentBase: path.join(__dirname, 'dist'),
+    // contentBase: path.join(__dirname, 'build'),
     historyApiFallback: true,
     compress: true,
     port:3000
