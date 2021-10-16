@@ -11,7 +11,7 @@ const Routers = (props) => {
     <Router>
       <Switch>
         <Route exact path={"/"} component={Home} {...props}/>
-        <Route exact path={routes.blog} component={Blog} {...props}/>
+        <Route exact path={routes.blog} component={Blog} />
         <Route path="*" component={NotFoundPage} {...props}/>
       </Switch>
     </Router>

@@ -300,8 +300,12 @@ class Title extends Component {
           xs={12}
           justifyContent="center"
           style={{ height: "fit-content" }}
-        >
-          <Typography variant="subtitle1" align="center">
+          >
+          {/* onClick={()=>{this.props.scrollDown()}} */}
+          {/* onClick={()=>{this.props.scrollDown()}} */}
+          <Typography style={{zIndex:20000}} variant="subtitle1" align="center" 
+          onClick={()=>{alert("llkkhjhlkj")}}
+          >
             Scroll Down
           </Typography>
         </Grid>

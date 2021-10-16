@@ -6,8 +6,8 @@
   "homepage": "https://mrjayasoorya.github.io/",
   "scripts": {
     "start": "env-cmd -f ./.env.development webpack serve",
-    "build": "env-cmd -f ./.env.development npm i && webpack --config webpack.config.js --mode production",
-    "predeploy": "npm run build",
+    "build": "env-cmd -f ./.env npm i && webpack --config webpack.config.js --mode production",
+    "predeploy": "npm run build && cp -r ./public/images/ build/",
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

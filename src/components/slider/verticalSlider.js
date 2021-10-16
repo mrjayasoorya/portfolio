@@ -74,13 +74,15 @@ componentWillMount(){
           }
         }]
     };
-    console.log(this.state)
+const scrollDown = () =>{
+  this.slider.slickGoTo(1)
+}
     return (
       <div style={{width:"100%", height:"100%"}} >
           <IconButton color="secondary"  id="goback" style={{color:"white", zIndex:5, display:"none", position:"absolute", bottom:0, right:"45%" }} onClick={()=>{this.slider.slickGoTo(0)}}><KeyboardArrowUpIcon color="secondary" fontSize="large"/></IconButton>
-        <Slider {...settings} ref={slider => this.slider = slider.innerSlider}>
+        <Slider {...settings} ref={slider => this.slider = slider?.innerSlider}>
           <div >
-          <div className="rootCard"><Title/></div>
+          <div className="rootCard"><Title scrollDown={scrollDown}/></div>
           </div>
           <div >
           <div className="rootCard"><Aboutus/></div>

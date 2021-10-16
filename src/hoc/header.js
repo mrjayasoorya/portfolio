@@ -5,7 +5,7 @@ const withHeader = Component => props =>{
 return (
     <>
     <Header/>
-    <Component/>
+    <Component {...props}/>
     </>
 )
 }

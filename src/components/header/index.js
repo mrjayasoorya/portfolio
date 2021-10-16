@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Hidden, makeStyles } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { routes } from "../../routes/routes";
 import MenuIcon from "@material-ui/icons/Menu";
 import SwipeableTemporaryDrawer from "./menuDrawer";
@@ -46,25 +46,25 @@ function Header(props) {
     setState({ ...state, [anchor]: open });
   };
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="header">
       <Grid container item xs={12}>
         {/* <Grid item xs={9} sm={6} className={classes.menuTitleName}>
           M. R. JAYASOORYA 🧑
         </Grid> */}
         <Grid container item xs={12} sm={12} justifyContent="flex-end" className={classes.menu}>
           <Hidden smDown>
-            <Link className={classes.menuItemLink} to={routes.home}>
+            <NavLink className={classes.menuItemLink} to={routes.home}>
               <Grid item className={classes.menuItem}>
               🏠 Home 
               </Grid>
-            </Link>
-            <Link className={classes.menuItemLink} to={routes.blog}>
+            </NavLink>
+            <NavLink className={classes.menuItemLink} to={routes.blog}>
               <Grid item className={classes.menuItem}>
               📰 Blog
               </Grid>
-            </Link>
+            </NavLink>
           </Hidden>
-          <Hidden smUp>
+          <Hidden mdUp>
             <MenuIcon onClick={toggleDrawer("right", true)}/>
           </Hidden>
         </Grid>

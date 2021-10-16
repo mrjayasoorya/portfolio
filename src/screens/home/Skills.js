@@ -9,9 +9,9 @@ let data = [
   {
     title: "JS FRAMEWORKS",
     languages: [
-      { image: process.env.REACT_APP_FOR_PATH + "images/reactjs.png", label: "REACT JS" },
+      { image: process.env.REACT_APP_FOR_PATH + "reactjs.png", label: "REACT JS" },
       {
-        image: process.env.REACT_APP_FOR_PATH + "images/node.svg",
+        image: process.env.REACT_APP_FOR_PATH + "node.svg",
         label: "NODE JS",
       }, 
     ],
@@ -19,23 +19,23 @@ let data = [
   {
     title: "COMPONENT FRAMEWORKS",
     languages: [
-      { image: process.env.REACT_APP_FOR_PATH + "images/materialui.png", label: "MATERIAL UI" },
-      { image: process.env.REACT_APP_FOR_PATH + "images/reactjs.png", label: "REACTSTRAP" },
+      { image: process.env.REACT_APP_FOR_PATH + "materialui.png", label: "MATERIAL UI" },
+      { image: process.env.REACT_APP_FOR_PATH + "reactjs.png", label: "REACTSTRAP" },
     ],
   },
   {
     title: "BUNDLERS",
     languages: [
-      { image: process.env.REACT_APP_FOR_PATH + "images/webpack.webp", label: "WEBPACK" },
+      { image: process.env.REACT_APP_FOR_PATH + "webpack.webp", label: "WEBPACK" },
     ],
   },
   {
     title: "CLOUDS",
     note: "Beginner know only the basics",
     languages: [
-      { image: process.env.REACT_APP_FOR_PATH + "images/aws.webp", label: "AWS" },
+      { image: process.env.REACT_APP_FOR_PATH + "aws.webp", label: "AWS" },
       {
-        image: process.env.REACT_APP_FOR_PATH + "images/digitalocean.png",
+        image: process.env.REACT_APP_FOR_PATH + "digitalocean.png",
         label: "DIGITAL OCEAN",
       },
     ],
@@ -44,8 +44,8 @@ let data = [
     title: "WEB SERVERS",
     note: "Beginner know only the basics",
     languages: [
-      { image: process.env.REACT_APP_FOR_PATH + "images/nginx.png", label: "NGNIX" },
-      { image: process.env.REACT_APP_FOR_PATH + "images/apache.png", label: "APACHE" },
+      { image: process.env.REACT_APP_FOR_PATH + "nginx.png", label: "NGNIX" },
+      { image: process.env.REACT_APP_FOR_PATH + "apache.png", label: "APACHE" },
     ],
   },
 ];
@@ -66,6 +66,8 @@ const style = (theme) => ({
     padding: "8px",
     position: "relative",
     background: "#fff",
+    borderLeft:"10px solid BLACK",
+borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     borderRadius: "8px",
     [theme.breakpoints.down("sm")]: {
       margin: "2em 1rem",

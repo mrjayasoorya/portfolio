@@ -4,7 +4,7 @@ import { makeStyles, Tooltip } from "@material-ui/core";
 import withAlelrtAndDialog from "../../hoc/withAlertAndDialog";
 // import swal from "@sweetalert/with-react";
 import ContactInfo from "./contactInfo";
-import emojiPhone from "../../images/emojisky.com-556128.png"
+import emojiPhone from "../../images/phone-call.jpg"
 
 const useStyles = makeStyles((theme) => ({
   contactIcon: {

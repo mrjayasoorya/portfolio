@@ -6,6 +6,8 @@ import withHeader from "../../hoc/header";
 const style = (theme) => ({
   root: {
     background: "#fff",
+    borderLeft:"10px solid BLACK",
+borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     borderRadius: "8px",
     display: "block",
     margin: "4rem",
@@ -23,7 +25,7 @@ const style = (theme) => ({
     // fontSize: "large",
     fontWeight: "bold",
     color: "white",
-    background: "orange",
+    background: "BLACK",
     padding: "15px 20px",
     borderRadius: "5px",
     margin: 30,
@@ -71,7 +73,7 @@ class Contact extends Component {
           </Grid>
           <Grid item xs={12} className={classes.subSection}>
             <Typography variant="body1">
-            ✍ Planning to write blogs, once completed will give a link
+            ✍ Technical blog is on progress, once completed will publish
             </Typography>
           </Grid>
         </Grid>

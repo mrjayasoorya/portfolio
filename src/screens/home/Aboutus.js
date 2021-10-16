@@ -15,6 +15,8 @@ const style = (theme) => ({
     [theme.breakpoints.down("sm")]: {
       margin: "1rem",
     },
+    borderLeft:"10px solid BLACK",
+borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%"
   },
   points: {
     padding: "8px 0px",
@@ -38,7 +40,7 @@ const style = (theme) => ({
     // fontSize: "large",
     fontWeight: "bold",
     color: "white",
-    background: "orange",
+    background: "BLACK",
     padding: "15px 20px",
     borderRadius: "5px",
     margin: 30,
