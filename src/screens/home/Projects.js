@@ -16,6 +16,7 @@ borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     padding: "8px",
     [theme.breakpoints.down("sm")]: {
       margin: "1rem",
+      border:"none"
     },
   },
   mainContent:{

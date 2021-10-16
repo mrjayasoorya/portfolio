@@ -12,11 +12,12 @@ const style = (theme) => ({
     position: "relative",
     width: "100%",
     padding: "8px",
+    borderLeft:"10px solid BLACK",
+borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     [theme.breakpoints.down("sm")]: {
       margin: "1rem",
+      border:"none"
     },
-    borderLeft:"10px solid BLACK",
-borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%"
   },
   points: {
     padding: "8px 0px",
