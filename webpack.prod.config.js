@@ -1,14 +1,15 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-require('dotenv').config()
+
 module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build"),
-    publicPath: '/'
+    // publicPath: '/'
   },
   plugins: [
+    
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
@@ -23,7 +24,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: require.resolve("babel-loader"),
+        loader: "babel-loader",
       },
       {
         test: /\.css$/,
