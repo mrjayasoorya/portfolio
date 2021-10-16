@@ -4,38 +4,38 @@ import { withRouter } from "react-router";
 import PageHeading from "../../components/pageHeading";
 import withHeader from "../../hoc/header";
 let origin = window.location.origin;
-
+console.log(process.env);
 let data = [
   {
     title: "JS FRAMEWORKS",
     languages: [
-      { image: "/images/reactjs.png", label: "REACT JS" },
+      { image: process.env.REACT_APP_FOR_PATH + "images/reactjs.png", label: "REACT JS" },
       {
-        image: "/images/node.svg",
+        image: process.env.REACT_APP_FOR_PATH + "images/node.svg",
         label: "NODE JS",
-      },
+      }, 
     ],
   },
   {
     title: "COMPONENT FRAMEWORKS",
     languages: [
-      { image: "/images/materialui.png", label: "MATERIAL UI" },
-      { image: "/images/reactjs.png", label: "REACTSTRAP" },
+      { image: process.env.REACT_APP_FOR_PATH + "images/materialui.png", label: "MATERIAL UI" },
+      { image: process.env.REACT_APP_FOR_PATH + "images/reactjs.png", label: "REACTSTRAP" },
     ],
   },
   {
     title: "BUNDLERS",
     languages: [
-      { image: "/images/webpack.webp", label: "WEBPACK" },
+      { image: process.env.REACT_APP_FOR_PATH + "images/webpack.webp", label: "WEBPACK" },
     ],
   },
   {
     title: "CLOUDS",
     note: "Beginner know only the basics",
     languages: [
-      { image: "/images/aws.webp", label: "AWS" },
+      { image: process.env.REACT_APP_FOR_PATH + "images/aws.webp", label: "AWS" },
       {
-        image: "/images/digitalocean.png",
+        image: process.env.REACT_APP_FOR_PATH + "images/digitalocean.png",
         label: "DIGITAL OCEAN",
       },
     ],
@@ -44,8 +44,8 @@ let data = [
     title: "WEB SERVERS",
     note: "Beginner know only the basics",
     languages: [
-      { image: "/images/nginx.png", label: "NGNIX" },
-      { image: "/images/apache.png", label: "APACHE" },
+      { image: process.env.REACT_APP_FOR_PATH + "images/nginx.png", label: "NGNIX" },
+      { image: process.env.REACT_APP_FOR_PATH + "images/apache.png", label: "APACHE" },
     ],
   },
 ];
