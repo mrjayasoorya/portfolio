@@ -52,12 +52,17 @@ let data = [
 const style = (theme) => ({
   chip: {
     borderRadius: "4px !important",
+    background:"linear-gradient(to top, #2a0845, #6441A5) !important",
     fontSize: "0.7rem",
     "& .MuiChip-root": {
       "& .MuiChip-avatar": {
         fontSize: "0.7rem !important",
       },
     },
+  },
+  avatarBg:{
+    background:"linear-gradient(to top, #2a0845, #6441A5) !important",
+    
   },
   root: {
     width: "100%",
@@ -66,18 +71,18 @@ const style = (theme) => ({
     padding: "8px",
     position: "relative",
     background: "#fff",
-    borderLeft:"10px solid BLACK",
+    // borderLeft:"10px solid BLACK",
 borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     borderRadius: "8px",
     [theme.breakpoints.down("sm")]: {
       margin: "2em 1rem",
-      border:"none"
     },
   },
   mainContent: {
     height: "70vh",
     display: "flex",
     alignItems: "center",
+    width:"100px !important"
   },
 });
 class Skills extends Component {
@@ -106,9 +111,9 @@ class Skills extends Component {
                     color="primary"
                     avatar={
                       val?.image?.length > 0 ? (
-                        <Avatar color="primary" src={val.image} />
+                        <Avatar color="primary" src={val.image} className={classes.avatarBg}/>
                       ) : (
-                        <Avatar color="primary">
+                        <Avatar color="primary" className={classes.avatarBg}>
                           {val?.label?.[0] ?? "JS"}
                         </Avatar>
                       )

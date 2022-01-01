@@ -8,13 +8,19 @@ import { Grid, makeStyles, Tooltip, Typography, withTheme } from "@material-ui/c
 const useStyles = makeStyles((theme) => ({
   icons: {
     // margin: "0px 8px 16px 8px",
-    textAlign:"center"
+    textAlign:"center",
+    "& svg":{
+      color:"#6441A5",
+    }
+
   },
   titleName: {
     textAlign: "left",
+    color:"#FC466B",
+
   },
   titleMain: {
-    color:theme.palette.primary.main,
+    color:"#6441A5",
     fontWeight: "bold",
   },
   footerText:{
@@ -29,7 +35,7 @@ function ContactInfo(props) {
         <Typography variant="subtitle1" className={classes.titleMain}>
           M R JAYASOORYA 🧑
         </Typography>
-        <Typography variant="caption">Full Stack Developer</Typography>
+        <Typography variant="caption">Senior Software Engineer</Typography>
       </div>
       <hr />
       <Grid container spacing={1} style={{marginTop:16}}>
@@ -67,7 +73,7 @@ function ContactInfo(props) {
       </Grid>
       <Grid container justifyContent="center" className={classes.footerText}>
           <Grid item>
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle1" style={{color:"FC466B"}}>
                   Click any on of the above to get in touch with me! 🤟
               </Typography>
           </Grid>

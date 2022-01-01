@@ -190,6 +190,7 @@ class AppDialog extends React.Component {
                 <Button
                   onClick={this.state.onCancel}
                   color="primary"
+                  style={{background:"linear-gradient(to right, #3F5EFB, #FC466B)"}}
                   variant="contained"
                 >
                   {this.state.negativeBtn}
@@ -202,6 +203,8 @@ class AppDialog extends React.Component {
                   color="primary"
                   variant="contained"
                   autoFocus
+                  style={{background:"linear-gradient(to right, #3F5EFB, #FC466B)"}}
+
                 >
                   {this.state.positiveBtn}
                 </Button>

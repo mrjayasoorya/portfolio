@@ -9,9 +9,9 @@ body {
   font-family: "varelaRound" !important;
 }
 .rootCard {
-  background: black;
+  background: linear-gradient(to right, #2a0845, #6441A5) !important;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   color: white;
 }
 .slick-dots {

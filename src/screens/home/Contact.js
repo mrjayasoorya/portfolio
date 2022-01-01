@@ -6,7 +6,7 @@ import withHeader from "../../hoc/header";
 const style = (theme) => ({
   root: {
     background: "#fff",
-    borderLeft:"10px solid BLACK",
+    // borderLeft:"10px solid BLACK",
 borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     borderRadius: "8px",
     display: "block",
@@ -16,7 +16,6 @@ borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     padding: "8px",
     [theme.breakpoints.down("sm")]: {
       margin: "1rem",
-      border:"none"
     },
   },
   points: {
@@ -26,7 +25,7 @@ borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     // fontSize: "large",
     fontWeight: "bold",
     color: "white",
-    background: "BLACK",
+    background: "linear-gradient(to right, #3F5EFB, #FC466B) !important",
     padding: "15px 20px",
     borderRadius: "5px",
     margin: 30,

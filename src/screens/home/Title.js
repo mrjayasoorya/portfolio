@@ -28,9 +28,9 @@ const style = (theme) => ({
   // --
 
   contentTitleOne: {
-    letterSpacing: 20,
-    fontWeight: "bold",
-    fontSize: "4rem",
+    // letterSpacing: 2,
+    // fontWeight: "bold",
+    fontSize: "2.3rem",
     [theme.breakpoints.down("sm")]: {
       letterSpacing: 10,
       fontWeight: "bold",
@@ -44,6 +44,7 @@ const style = (theme) => ({
   },
   contentTitleTwo: {
     letterSpacing: 10,
+    // fontWeight:"bold",
     margin: "0px 4px",
     fontSize: "2rem",
     [theme.breakpoints.down("sm")]: {
@@ -272,8 +273,9 @@ class Title extends Component {
         </Hidden>
         <Grid item xs={12} sm={7} className={classes.sectionTwo}>
           <Grid item xs={12}>
-            <Typography variant="h3" className={classes.contentTitleOne}>
-              Either you run the day or the day runs you.
+            <Typography variant="h5" className={classes.contentTitleOne}>
+              
+            <b>I Think, Before I Code. Try New Things.</b>
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -286,12 +288,12 @@ class Title extends Component {
               variant="subtitle1"
               className={classes.contentTitleFour}
             >
-              Fullstack Developer
+              Senior Software Engineer
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="caption" className={classes.contentTitleThree}>
-              2+ years of experience
+              3+ years of experience
             </Typography>
           </Grid>
         </Grid>

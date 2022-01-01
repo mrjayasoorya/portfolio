@@ -54,18 +54,18 @@ export default function SwipeableTemporaryDrawer(props) {
                 <Link className={classes.menuItemLink} to={routes.home}>
               <ListItem li key={"Home"} >
                   <ListItemIcon>{"🏠"}</ListItemIcon>
-                  <ListItemText primary={"Home"} />
+                  <ListItemText style={{color:"#FC466B"}} primary={"Home"} />
               </ListItem>
                 </Link>
                 <Link className={classes.menuItemLink} to={routes.blog}>
               <ListItem li key={"Blog"}>
                   <ListItemIcon>{"📰"}</ListItemIcon>
-                  <ListItemText primary={"Blog"} />
+                  <ListItemText style={{color:"#FC466B"}} primary={"Blog"} />
               </ListItem>
                 </Link>
             </List>
             <div className={classes.closeButton}>
-                <Button variant="contained" color="primary" onClick={toggleDrawer(anchor, false)}><CancelIcon color="secondary" style={{marginRight:"10px"}}/>Close</Button>
+                <Button style={{background:"linear-gradient(to right, #3F5EFB, #FC466B)"}}  variant="contained" color="primary" onClick={toggleDrawer(anchor, false)}><CancelIcon color="secondary" style={{marginRight:"10px"}}/>Close</Button>
             </div>
           </SwipeableDrawer>
         </React.Fragment>

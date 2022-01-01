@@ -11,7 +11,19 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     animation: `$zoominoutsinglefeatured 2s infinite`,
   },
-
+callicon:{
+  fontSize: "24px",
+   color: "#6441A5",
+  background: "white",
+  height: "40px",
+  width: "40px",
+  /* text-align: center, */
+  margin: "auto",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  borderRadius: "50%",
+},
   "@keyframes zoominoutsinglefeatured": {
     "0%": {
       transform: "scale(1, 1)",
@@ -165,7 +177,8 @@ function ContactIcon(props) {
           style={{ fontSize: "2rem" }}
         >
           {/* 🧐 */}
-          <img src={emojiPhone} width={50} height={50}/>
+          {/* <img src={emojiPhone} width={50} height={50}/> */}
+          <i class={`fa ${classes.callicon}`}>&#xf095;</i>
         </div>
         {/* <ContactPhoneIcon
           color="secondary"

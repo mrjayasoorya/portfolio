@@ -12,12 +12,11 @@ const style = (theme) => ({
     position: "relative",
     width: "100%",
     padding: "8px",
-    borderLeft:"10px solid BLACK",
-borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     [theme.breakpoints.down("sm")]: {
       margin: "1rem",
-      border:"none"
     },
+    // borderLeft:"10px solid BLACK",
+borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%"
   },
   points: {
     padding: "8px 0px",
@@ -41,7 +40,7 @@ borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     // fontSize: "large",
     fontWeight: "bold",
     color: "white",
-    background: "BLACK",
+    background: "linear-gradient(to right, #3F5EFB, #FC466B) !important",
     padding: "15px 20px",
     borderRadius: "5px",
     margin: 30,

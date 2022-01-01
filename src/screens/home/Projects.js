@@ -6,7 +6,7 @@ import withHeader from "../../hoc/header";
 const style = (theme) => ({
   root: {
     background: "#fff",
-    borderLeft:"10px solid BLACK",
+    // borderLeft:"10px solid BLACK",
 borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     borderRadius: "8px",
     display: "block",
@@ -16,7 +16,6 @@ borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     padding: "8px",
     [theme.breakpoints.down("sm")]: {
       margin: "1rem",
-      border:"none"
     },
   },
   mainContent:{
@@ -28,7 +27,7 @@ borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     // fontSize: "large",
     fontWeight: "bold",
     color: "white",
-    background: "BLACK",
+    background: "linear-gradient(to right, #3F5EFB, #FC466B) !important",
     padding: "15px 20px",
     borderRadius: "5px",
     margin: 30,
@@ -45,7 +44,10 @@ borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
     [theme.breakpoints.down("sm")]: {
         padding:"5px 0px"
       },
-  }
+      "& button":{
+        background: "linear-gradient(to top, #2a0845, #6441A5) !important",
+      }
+  },
 });
 class Projects extends Component {
   render() {
