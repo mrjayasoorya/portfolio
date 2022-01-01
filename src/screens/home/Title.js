@@ -341,4 +341,4 @@ class Title extends Component {
   }
 }
 
-export default withHeader(withStyles(style)(Title));
+export default withStyles(style)(Title);

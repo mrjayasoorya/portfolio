@@ -160,4 +160,4 @@ class Skills extends Component {
   }
 }
 
-export default withHeader(withStyles(style)(withRouter(Skills)));
+export default withStyles(style)(withRouter(Skills));

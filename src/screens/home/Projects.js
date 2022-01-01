@@ -94,4 +94,4 @@ class Projects extends Component {
   }
 }
 
-export default withHeader(withStyles(style)(Projects));
+export default withStyles(style)(Projects);

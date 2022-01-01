@@ -6,13 +6,15 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SwipeableTemporaryDrawer from "./menuDrawer";
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: 100,
-    maxHeight: 100,
+    minHeight: 60,
+    maxHeight: 60,
+    // paddingBottom:30,
     position: "sticky",
     top: 0,
     width: "100vw",
     color: "white",
     padding: "8px 0px",
+    background:"linear-gradient(to right, #2a0845, #6441A5) !important"
   },
   menuTitleName: {
     padding: "0px 8px",

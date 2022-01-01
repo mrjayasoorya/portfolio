@@ -123,4 +123,4 @@ class Aboutus extends Component {
   }
 }
 
-export default withHeader(withStyles(style)(Aboutus));
+export default withStyles(style)(Aboutus);

@@ -83,4 +83,4 @@ class Contact extends Component {
   }
 }
 
-export default withHeader(withStyles(style)(Contact));
+export default withStyles(style)(Contact);
