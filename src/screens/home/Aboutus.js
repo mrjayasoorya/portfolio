@@ -77,7 +77,7 @@ class Aboutus extends Component {
               color="primary"
               className={classes.headerItem}
             >
-              Fullstack Developer
+              Senior Software Engineer
             </Typography>
             <Typography variant="subtitle2" color="primary" className={classes.headerItem}>
               🗼 Chennai
