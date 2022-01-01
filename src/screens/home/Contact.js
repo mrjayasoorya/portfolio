@@ -53,7 +53,7 @@ class Contact extends Component {
             <Typography variant="body1" color="primary">
               {" "}
               <span>👉</span> Thinking to work on my fitness 😜, swiping through
-              social medias and 🎧 Listening to songs.
+              social media and 🎧 listening to songs
             </Typography>
           </Grid>
           <Grid item xs={12} className={classes.points}>
@@ -68,7 +68,7 @@ class Contact extends Component {
           </Grid>
           <Grid item xs={12} className={classes.points}>
             <Typography variant="body1" color="primary">
-              <span>👉</span> I do travel whenever we get some time.
+              <span>👉</span> I do travel whenever I get some time
             </Typography>
           </Grid>
           <Grid item xs={12} className={classes.subSection}>

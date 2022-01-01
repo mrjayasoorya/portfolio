@@ -58,7 +58,7 @@ function ContactInfo(props) {
         </Tooltip>
         <Tooltip title="Text Me" arrow placement="bottom">
           <Grid item xs={3} className={classes.icons}>
-            <a href="https://wa.me/919092893151" target="_blank">
+            <a href="https://wa.me/919952120656" target="_blank">
               <WhatsAppIcon color="primary" />
             </a>
           </Grid>
@@ -74,7 +74,7 @@ function ContactInfo(props) {
       <Grid container justifyContent="center" className={classes.footerText}>
           <Grid item>
               <Typography variant="subtitle1" style={{color:"FC466B"}}>
-                  Click any on of the above to get in touch with me! 🤟
+                  Click any one of the above to get in touch with me! 🤟
               </Typography>
           </Grid>
       </Grid>

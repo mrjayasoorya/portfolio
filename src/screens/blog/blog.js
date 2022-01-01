@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import PageHeading from "../../components/pageHeading";
 import withHeader from "../../hoc/header";
 import devToLogo from "../../images/dev-to-logo.png";
+import { routes } from "../../routes/routes";
 
 const style = (theme) => ({
   root: {
@@ -36,6 +37,10 @@ const style = (theme) => ({
     [theme.breakpoints.only("xs")]: {
       fontSize: "1.7rem",
     },
+  },
+  menuItemLink: {
+    // textDecoration: "underlined",
+    color: "white",
   },
 });
 
@@ -75,9 +80,27 @@ class BlogSection extends Component {
                   display: "inline-block",
                 }}
               >
-                Cool! No blogs published yet
+                Cool! No blogs published yet ☹️
               </Typography>
             </a>
+            <br/>
+            <br/>
+            <br/>
+
+            <NavLink className={classes.menuItemLink} to={routes.home}>
+            <Typography
+                variant="subtitle1"
+                color="secondary"
+                style={{
+                  textAlign: "center",
+                  width: "100%",
+                  display: "inline-block",
+                }}
+              >
+                  
+              <span style={{textDecoration:"underline"}}> Click To Go Back!</span> 👋
+              </Typography>
+            </NavLink>
           </Grid>
         </Grid>
       </Grid>

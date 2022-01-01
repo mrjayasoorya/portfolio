@@ -94,7 +94,7 @@ class Aboutus extends Component {
             <Grid item xs={12} className={classes.points}>
               <Typography variant="body1" color="primary">
                 {" "}
-                <span>👉</span> Been developed various products in web, for 2+
+                <span>👉</span> Been developed various products in web, for 3+
                 years.
               </Typography>
             </Grid>
@@ -106,7 +106,7 @@ class Aboutus extends Component {
             <Grid item xs={12} className={classes.points}>
               <Typography variant="body1" color="primary">
                 <span>👉</span> I like to try new things whenever i get time. I
-                will work had and keen to be updated in new technology.
+                will work hard and keen to be updated in new technology.
               </Typography>
             </Grid>
           </Grid>

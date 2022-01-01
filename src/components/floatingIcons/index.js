@@ -34,7 +34,7 @@ function FloatingContactInfo(props) {
       </Tooltip>
       <Tooltip title="Text Me" arrow placement="right">
         <Grid item xs={12} className={classes.icons}>
-          <a href="https://wa.me/919092893151" target="_blank">
+          <a href="https://wa.me/919952120656" target="_blank">
             <WhatsAppIcon color="secondary" />
           </a>
         </Grid>
