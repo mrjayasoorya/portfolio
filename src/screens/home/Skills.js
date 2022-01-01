@@ -52,7 +52,7 @@ let data = [
 const style = (theme) => ({
   chip: {
     borderRadius: "4px !important",
-    background:"linear-gradient(to top, #2a0845, #6441A5) !important",
+    background:"linear-gradient(to top, #2a0845c7, #6441A5) !important",
     fontSize: "0.7rem",
     "& .MuiChip-root": {
       "& .MuiChip-avatar": {
@@ -61,7 +61,7 @@ const style = (theme) => ({
     },
   },
   avatarBg:{
-    background:"linear-gradient(to top, #2a0845, #6441A5) !important",
+    background:"linear-gradient(to top, #2a0845c7, #6441A5) !important",
     
   },
   root: {

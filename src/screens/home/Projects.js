@@ -45,7 +45,7 @@ borderImage:"linear-gradient( to bottom, white, rgb(0 0 0)) 1 100%",
         padding:"5px 0px"
       },
       "& button":{
-        background: "linear-gradient(to top, #2a0845, #6441A5) !important",
+        background: "linear-gradient(to top, #2a0845c7, #6441A5) !important",
       }
   },
 });
